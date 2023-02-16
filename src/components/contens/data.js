@@ -1,6 +1,10 @@
 import web1 from "../../assets/img/web1.png"
 import web2 from "../../assets/img/web2.png"
 import web3 from "../../assets/img/web3.png"
+import html from "../../assets/img/html.png"
+import css from "../../assets/img/css.png"
+import react from "../../assets/img/react.png"
+import bs from "../../assets/img/bs.png"
 
 
 
@@ -25,3 +29,26 @@ export const portfolio = [
     },
 
 ]
+
+
+export const skill = [
+    {
+        name: 'HTML',
+        tech: html
+    },
+    {
+        name: 'CSS',
+        tech: css
+    },
+    {
+        name: 'Bootstrap',
+        tech: bs
+    },
+    {
+        name: 'react',
+        tech: react
+    }
+
+]
+
+// skill.map(e => console.log(e))

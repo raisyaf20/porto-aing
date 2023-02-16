@@ -7,17 +7,10 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-.box-1 {
-  background: linear-gradient(140.26deg, #0ea5e9 9.76%, rgba(6, 6, 6, 0.99) 108.78%);
-  border-radius: 16px;
-}
-.box-2 {
-  background: linear-gradient(140.26deg, #0ee980 9.76%, rgba(6, 6, 6, 0.84) 108.78%);
-  border-radius: 16px;
-}
-.box-3 {
-  background: linear-gradient(140.26deg, #14b8a6 9.76%, rgba(40, 42, 43, 0.99) 108.78%);
-  border-radius: 16px;
+.navbar-sc {
+  @apply fixed z-50 bg-white bg-opacity-70;
+  backdrop-filter: blur(3px);
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
 }
 
 .togle > span:nth-child(1) {

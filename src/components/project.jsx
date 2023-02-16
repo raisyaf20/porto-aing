@@ -1,9 +1,10 @@
 import React from "react";
 import { portfolio } from "./contens/data";
+import Skill from "./skil";
 
 const Project = () => {
   return (
-    <section className="bg-slate-100 mt-20 p-7" id="pro">
+    <section className="bg-slate-100 mt-11 p-7" id="pro">
       <div className="container">
         <div className="w-full px-4 mb-8">
           <div className="max-w-xl mx-auto text-center">
@@ -32,6 +33,7 @@ const Project = () => {
           })}
         </div>
       </div>
+      <Skill />
     </section>
   );
 };

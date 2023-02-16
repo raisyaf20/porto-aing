@@ -9,6 +9,16 @@ const Navigation = () => {
     alert("pencet");
   };
 
+  window.onscroll = function () {
+    const head = document.querySelector("header");
+    const fix = head.offsetTop;
+    if (window.pageYOffset > fix) {
+      head.classList.add("navbar-sc");
+    } else {
+      head.classList.remove("navbar-sc");
+    }
+  };
+
   return (
     <header className="bg-transparent absolute top-0 left-0 right-0 w-full">
       <div className="container mx-auto">
