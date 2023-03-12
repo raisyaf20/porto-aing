@@ -7,14 +7,14 @@ const Hero = () => {
       <div className="container">
         <div className="flex text-center justify-center flex-wrap lg:text-left">
           <div className="self-center px-4 lg:w-1/2">
-            <h3 className="text-base capitalize text-primary">
+            <h3 className="text-base capitalize lg:text-lg text-primary">
               Hello, my name
             </h3>
-            <h1 className="text-3xl font-bold text-slate-800 md:text-4xl">
+            <h1 className="text-3xl font-bold text-slate-800 md:text-5xl">
               Muhamad Raisyaf
             </h1>
-            <p className="text-base text-slate-800 mb-2">Front-End Developer</p>
-            <p className="text-slate-600">
+            <p className="text-base text-slate-900 mb-2">Front-End Developer</p>
+            <p className="text-slate-500">
               Teens interested in IT, especially Frontend, with
               JavaScript/CSS/React JS/Bootstrap skills. Able to build
               interactive and dynamic websites, and be able to do consume REST

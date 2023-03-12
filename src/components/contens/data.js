@@ -5,9 +5,9 @@ import html from "../../assets/img/html.png";
 import css from "../../assets/img/css.png";
 import react from "../../assets/img/react.png";
 import bs from "../../assets/img/bs.png";
-import sv from "../../assets/img/location.png";
-import call from "../../assets/img/shape.png";
-import email from "../../assets/img/email.svg";
+import sv from "../../assets/img/Location-Icon.svg";
+import call from "../../assets/img/phone-call.svg";
+import email from "../../assets/img/mail.svg";
 
 export const portfolio = [
   {

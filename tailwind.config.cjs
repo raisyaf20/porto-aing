@@ -6,12 +6,10 @@ module.exports = {
       center: true,
       padding: "30px",
     },
+
     extend: {
       colors: {
-        primary: "#0ea5e9",
-      },
-      screens: {
-        "2xl": "999px",
+        primary: "#06b6d4",
       },
     },
   },
