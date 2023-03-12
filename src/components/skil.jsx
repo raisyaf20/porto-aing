@@ -5,7 +5,9 @@ const Skill = () => {
   return (
     <section className="mx-auto mt-10 mb-3p-5" id="skill">
       <div className="container">
-        <h1 className="text-center text-2xl uppercase text-slate-700 font-bold md:text-3xl mb-5">SKill</h1>
+        <h1 className="text-center text-2xl uppercase text-slate-700 font-bold md:text-3xl mb-5">
+          SKill
+        </h1>
         <div className="px-4 grid text-center grid-cols-2 gap-3 justify-center md:grid-cols-4">
           {skill.map((el, i) => {
             return (
@@ -14,7 +16,7 @@ const Skill = () => {
                   <img
                     src={el.tech}
                     alt={el.name}
-                    className="w-full grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 duration-700"
+                    className="w-full grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 duration-200"
                   />
                 </div>
               </div>

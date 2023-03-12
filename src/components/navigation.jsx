@@ -2,12 +2,6 @@ import React, { useState } from "react";
 
 const Navigation = () => {
   const [burger, setBurger] = useState(false);
-
-  // const nav = document.getElementById("nav");
-  // const btn = e.target;
-  // btn.classList.toggle("togle");
-  // nav.classList.toggle("hidden");
-  // alert("pencet");
   console.log(burger);
 
   window.onscroll = function () {
@@ -25,38 +19,62 @@ const Navigation = () => {
       <div className="container mx-auto">
         <div className="flex flex-wrap justify-between items-center relative">
           <div className="self-center">
-            <a href="#" className="px-4 text-primary text-xl font-bold lg:text-3xl">
-              Navigasi Vite
+            <a
+              href="/#"
+              className=" text-primary text-2xl font-bold lg:text-3xl"
+            >
+              Portfolio
             </a>
           </div>
-          <div className="self-center py-6">
+          <div className="self-center py-7">
             <button
-              className={`${burger ? "toggle" : ""} py-4 absolute top-0 right-4 lg:hidden`}
+              className={`${
+                burger ? "toggle" : ""
+              } py-4 absolute top-0 right-4 lg:hidden`}
               onClick={() => setBurger(!burger)}
             >
-              <span className="block w-[30px] h-[2px] bg-slate-700 transition-all duration-300 ease-in-out mb-2"></span>
-              <span className="block w-[30px] h-[2px] bg-slate-700 transition-all duration-300 ease-in-out mb-2"></span>
-              <span className="block w-[30px] h-[2px] bg-slate-700 transition-all duration-300 ease-in-out "></span>
+              <div className="flex flex-col items-center ">
+                <span
+                  className={`block ${
+                    burger ? "w-[32px]" : "w-[23px]"
+                  }  h-[3px] rounded-full bg-slate-700 transition-all duration-300 ease-in-out mb-2`}
+                ></span>
+                <span className="block w-[33px] h-[3px] rounded-full bg-slate-700 transition-all duration-300 ease-in-out mb-2"></span>
+                <span
+                  className={`block ${
+                    burger ? "w-[32px]" : "w-[23px]"
+                  } h-[3px] rounded-full bg-slate-700 transition-all duration-300 ease-in-out `}
+                ></span>
+              </div>
             </button>
             <nav
               className={`${
                 burger ? "" : "hidden"
-              } max-w-[13rem] w-full absolute bg-white lg:bg-transparent top-full z-20 right-6 lg:static lg:block`}
+              } max-w-[15rem] w-full rounded-lg shadow-md absolute bg-white lg:bg-transparent top-16 z-20 right-6 lg:static lg:block lg:shadow-none lg:rounded-none`}
               id="nav"
             >
               <ul className="block p-4 rounded-lg shadow-lg lg:flex lg:rounded-none lg:shadow-none lg:py-0">
                 <li className="flex group lg:ml-3 lg:text-lg">
-                  <a href="#" className="text-base group-hover:text-primary lg:text-md">
+                  <a
+                    href="#"
+                    className="text-base group-hover:text-primary lg:text-lg"
+                  >
                     Home
                   </a>
                 </li>
                 <li className="flex group lg:ml-3 lg:text-lg">
-                  <a href="#skill" className="text-base group-hover:text-primary lg:text-md">
+                  <a
+                    href="#skill"
+                    className="text-base group-hover:text-primary lg:text-lg"
+                  >
                     Skill
                   </a>
                 </li>
                 <li className="flex group lg:ml-3 lg:text-lg">
-                  <a href="#pro" className="text-base group-hover:text-primary lg:text-md">
+                  <a
+                    href="#pro"
+                    className="text-base group-hover:text-primary lg:text-lg"
+                  >
                     Project
                   </a>
                 </li>
