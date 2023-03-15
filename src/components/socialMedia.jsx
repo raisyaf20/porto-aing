@@ -5,9 +5,16 @@ const SocialMedia = () => {
     <>
       <section className="mt-14">
         <div className="container mx-auto ">
-          <div className="flex flex-wrap border px-5 border-slate-200 shadow-md justify-center md:p-8 lg:rounded-full rounded-md">
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="900"
+            className="flex flex-wrap border px-5 border-slate-200 dark:border-slate-600 shadow-md justify-center md:p-8 lg:rounded-full rounded-md"
+          >
             {contactMe.map((e, i) => (
-              <div className="flex w-full group p-2 mb-5 lg:mb-0 gap-3 lg:justify-center items-center lg:w-1/3 relative">
+              <div
+                key={i}
+                className="flex w-full group p-2 mb-5 lg:mb-0 gap-3 lg:justify-center items-center lg:w-1/3 relative"
+              >
                 <div key={i} className="w-9 md:w-10 lg:w-11">
                   <img
                     src={e.img}
@@ -16,10 +23,10 @@ const SocialMedia = () => {
                   />
                 </div>
                 <div>
-                  <h3 className="text-lg md:text-xl lg:text-2xl font-semibold text-slate-700">
+                  <h3 className="text-lg md:text-xl lg:text-2xl font-semibold text-slate-700 dark:text-slate-100">
                     {e.title}
                   </h3>
-                  <p className="text-slate-700 text-base md:text-md">
+                  <p className="text-slate-700 text-base md:text-md dark:text-slate-100">
                     {e.desc}
                   </p>
                 </div>

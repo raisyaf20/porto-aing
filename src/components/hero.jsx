@@ -10,11 +10,13 @@ const Hero = () => {
             <h3 className="text-base capitalize lg:text-lg text-primary">
               Hello, my name
             </h3>
-            <h1 className="text-3xl font-bold text-slate-800 md:text-5xl">
+            <h1 className="text-3xl font-bold text-slate-800 md:text-5xl dark:text-slate-50">
               Muhamad Raisyaf
             </h1>
-            <p className="text-base text-slate-900 mb-2">Front-End Developer</p>
-            <p className="text-slate-500">
+            <p className="text-base text-slate-900 mb-2 dark:text-slate-100">
+              Front-End Developer
+            </p>
+            <p className="text-slate-500 dark:text-slate-300">
               Teens interested in IT, especially Frontend, with
               JavaScript/CSS/React JS/Bootstrap skills. Able to build
               interactive and dynamic websites, and be able to do consume REST
@@ -22,7 +24,7 @@ const Hero = () => {
             </p>
           </div>
           <div className="self-center  w-full px-4 mt-6 py-3 lg:w-1/3">
-            <div className="max-w-sm h-[320px] border-8 shadow-xl border-zinc-200 relative mx-auto w-full overflow-hidden bg-gradient-to-tr from-primary to-pink-500 radius md:max-w-[390px] md:h-[349] lg:max-w-[490px] lg:h-[426px] ">
+            <div className="max-w-sm h-[320px] border-8 shadow-xl border-zinc-200  dark:border-gray-400 relative mx-auto w-full overflow-hidden bg-gradient-to-tr from-primary to-pink-500 radius md:max-w-[390px] md:h-[349] lg:max-w-[490px] lg:h-[426px] ">
               <img
                 src={face}
                 alt="people"
