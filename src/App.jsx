@@ -3,18 +3,18 @@ import Footer from "./components/footer";
 import Hero from "./components/hero";
 import Navigation from "./components/navigation";
 import Project from "./components/project";
-import SocialMedia from "./components/socialMedia";
+import Skill from "./components/skil";
 
 function App() {
   return (
     <>
       <Navigation />
       <Hero />
-      <SocialMedia />
       <Project />
+      <Skill  />
       <Footer />
     </>
-  );
+  )
 }
 
 export default App;

@@ -1,54 +1,51 @@
 import React from "react";
-import { portfolio } from "./contens/data";
-import Skill from "./skil";
+import { portfolio } from "../utils/constan";
 
 const Project = () => {
   return (
-    <section className="bg-slate-100 mt-14 p-7 dark:bg-slate-700" id="pro">
+    <section className="pt-14" id="pro">
       <div className="container">
         <div className="w-full px-4 mb-8">
           <div className="max-w-xl mx-auto text-center">
-            <h4 className="font-semibold text-lg text-primary mb-2">
+            <h4 className="font-semibold text-lg text-purple-500 mb-2">
               Portfolio
             </h4>
             <h4 className="font-bold text-2xl text-slate-700 mb-2 uppercase dark:text-white">
               Project
             </h4>
             <p className="font-medium text-medium text-slate-500 dark:text-slate-50">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
-              nam veritatis eos quas quaerat, hic doloribus veniam inventore
-              eaque eum.
+              Highlights that this section is a comprehensive display of all projects.
             </p>
           </div>
         </div>
-        <div className="w-full px-4 flex flex-wrap justify-center mx-auto xl:w-10/12">
+        <div className="w-full px-4 flex flex-wrap justify-center mx-auto xl:w-10/12 dark:text-white gap-2">
           {portfolio.map((e, i) => {
             return (
-              <div className="mb-12 p-4 md:w-1/2" key={i}>
-                <div className="rounded-md shadow-md mb-3 overflow-hidden">
-                  <img src={e.img} alt="website food" className="w-full" />
+              <a
+                key={i}
+                href={e.git}
+                target="_blank"
+                className="block py-2 px-6 border hover:bg-gray-100 dark:border-purple-500/20 rounded-lg dark:hover:bg-purple-950/10 max-w-sm w-full"
+              >
+                <h3 className="text-xl">{e.namePro}</h3>
+                <p className="dark:text-slate-400 text-base font-extralight my-1">{e.description}</p>
+                <div className="flex flex-wrap gap-2 my-2">
+                  {e.tools.map((e, idx) => (
+                    <div className="bg-purple-800/10 p-1.5 rounded-sm text-white" key={idx}>
+                      <span className="text-purple-500 font-semibold">{e}</span>
+                    </div>
+                  ))}
                 </div>
-                <h3 className="font-semibold text-xl text-gray-800 mb-1 dark:text-slate-100">
-                  {e.namePro}
-                </h3>
-                <p className="font-medium text-base text-slate-500 mb-3 dark:text-slate-200">
-                  {e.description}
-                </p>
-                <a
-                  href={e.git}
-                  target="_blank"
-                  className="py-2 px-6 bg-primary rounded-lg hover:bg-sky-600"
-                >
-                  Learn More
-                </a>
-              </div>
+                <div className="mx-auto max-w-sm w-full mt-4">
+                  <img src={e.img} alt={e.namePro} className="w-full h-auto rounded-lg" />
+                </div>
+              </a>
             );
           })}
         </div>
       </div>
-      <Skill />
     </section>
   );
 };
 
-export default Project;
+export default React.memo(Project);
