@@ -25,7 +25,7 @@ const Project = () => {
                 key={i}
                 href={e.git}
                 target="_blank"
-                className="block py-2 px-6 border hover:bg-gray-100 dark:border-purple-500/20 rounded-lg dark:hover:bg-purple-950/10 max-w-sm w-full"
+                className="block py-2 px-6 border hover:bg-gray-100 dark:border-purple-500/20 rounded-lg hover:dark:bg-purple-900/10 max-w-sm w-full"
               >
                 <h3 className="text-xl">{e.namePro}</h3>
                 <p className="dark:text-slate-400 text-base font-extralight my-1">{e.description}</p>

@@ -37,9 +37,9 @@ const Navigation = () => {
               Portfolio
             </a>
           </div>
-          <div className="self-center py-5 flex justify-center max-w-sm w-full ">
+          <div className="self-center py-3 flex justify-end gap-5 lg:gap-0 items-center max-w-sm w-full ">
             <div
-              className="absolute right-20 top-4 cursor-pointer w-16 h-[34px] rounded-full bg-slate-700 dark:bg-slate-200 lg:static"
+              className=" cursor-pointer w-16 h-[34px] rounded-full bg-slate-700 dark:bg-slate-200 lg:static"
               onClick={togle}
             >
               <button
@@ -51,7 +51,7 @@ const Navigation = () => {
             <button
               className={`${
                 burger ? "toggle" : ""
-              } py-4 absolute top-0 right-4 lg:hidden`}
+              } py-4 lg:hidden`}
               onClick={() => setBurger(!burger)}
             >
               <div className="flex flex-col items-center ">
