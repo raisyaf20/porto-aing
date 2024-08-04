@@ -72,7 +72,6 @@ const Navigation = () => {
                     <span className="flex-1 text-base group-hover:dark:text-blue-400 lg:text-lg dark:text-white">{e.title}</span>
                   </a>
                 ))}
-                <a href="../files/cv_raisyaf.pdf" className="text-white">Download</a>
               </div>
             </nav>
           </div>
