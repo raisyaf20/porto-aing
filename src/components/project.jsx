@@ -7,9 +7,9 @@ const Project = () => {
       <div className="container">
         <div className="w-full px-4 mb-8">
           <div className="max-w-xl mx-auto text-center">
-            <h4 className="font-semibold text-lg text-purple-500 mb-2">
+            <span className="font-semibold text-lg text-purple-500 mb-2">
               Portfolio
-            </h4>
+            </span>
             <h4 className="font-bold text-2xl text-slate-700 mb-2 uppercase dark:text-white">
               Project
             </h4>

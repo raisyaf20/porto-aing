@@ -1,7 +1,6 @@
 import React from "react";
 import face from "../assets/img/face.png";
 import { media } from "../utils/constan";
-import LinkedinSVG from "../assets/icons/LinkedinSVG";
 
 const Hero = () => {
   return (
@@ -26,7 +25,7 @@ const Hero = () => {
             </p>
             <div className="flex gap-2 mt-4 w-full justify-center lg:justify-start">
               {media.map((el, idx) => (
-                <a href={el.href} key={el.keyName + idx} target="_blank" className="p-1 w-10 h-10 grid place-items-center bg-purple-500 dark:bg-purple-800/30 rounded-full text-white">
+                <a href={el.href} aria-label={`Read more ${el.keyName}`} key={el.keyName + idx} target="_blank" className="p-1 w-10 h-10 grid place-items-center bg-purple-500 dark:bg-purple-800/30 rounded-full text-white">
                   {el.icon()}
                 </a>
               ))}
@@ -48,3 +47,4 @@ const Hero = () => {
 };
 
 export default React.memo(Hero);
+ 
